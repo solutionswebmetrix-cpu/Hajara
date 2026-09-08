@@ -1,0 +1,31 @@
+{
+  "title": "Bakuchi Powder",
+  "description": "Bakuchi Powder for traditional wellness support.",
+  "seoTitle": "Bakuchi Powder - Hajara Multicare",
+  "seoDescription": "Bakuchi Powder for traditional wellness support.",
+  "benefits": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "uses": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "dosage": [
+    "Take as directed by Ayurvedic physician",
+    "Follow recommended dosage"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/nxb1cweo/image/upload/f_auto,q_auto,w_1000/product/powder/bakuchi_powder.webp"
+  ],
+  "meta": {
+    "keywords": [
+      "Bakuchi Powder",
+      "Single Herb Powders",
+      "Ayurvedic"
+    ]
+  },
+  "extra": {}
+}

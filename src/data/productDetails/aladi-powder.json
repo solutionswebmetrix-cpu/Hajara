@@ -1,0 +1,31 @@
+{
+  "title": "Aladi Powder",
+  "description": "Aladi Powder for traditional wellness support.",
+  "seoTitle": "Aladi Powder - Hajara Multicare",
+  "seoDescription": "Aladi Powder for traditional wellness support.",
+  "benefits": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "uses": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "dosage": [
+    "Take as directed by Ayurvedic physician",
+    "Follow recommended dosage"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/nxb1cweo/image/upload/f_auto,q_auto,w_1000/product/powder/aladi_powder.webp"
+  ],
+  "meta": {
+    "keywords": [
+      "Aladi Powder",
+      "Single Herb Powders",
+      "Ayurvedic"
+    ]
+  },
+  "extra": {}
+}

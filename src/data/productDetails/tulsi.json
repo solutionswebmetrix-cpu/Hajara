@@ -1,0 +1,31 @@
+{
+  "title": "Tulsi",
+  "description": "Ayurvedic Tulsi for traditional wellness support.",
+  "seoTitle": "Tulsi - Hajara Multicare",
+  "seoDescription": "Ayurvedic Tulsi for traditional wellness support.",
+  "benefits": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "uses": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "dosage": [
+    "Take as directed by Ayurvedic physician",
+    "Follow recommended dosage"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/nxb1cweo/image/upload/f_auto,q_auto,w_1000/products/Single Herb Powders/tulsi_powder.jpg"
+  ],
+  "meta": {
+    "keywords": [
+      "Tulsi",
+      "Single Herb Powders",
+      "Ayurvedic"
+    ]
+  },
+  "extra": {}
+}

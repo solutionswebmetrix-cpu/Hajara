@@ -1,0 +1,93 @@
+.business-type {
+  width: 100%;
+  background: var(--cream);
+}
+
+.business-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.business-badge {
+  background: var(--white);
+  color: var(--text);
+  padding: 16px 32px;
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.business-badge:hover {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-xl);
+}
+
+@media (max-width: 1920px) {
+  .business-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .business-grid {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .business-grid {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .business-grid {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .business-grid {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .business-badge {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .business-badge {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-badge {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .business-badge {
+    font-size: 13px;
+    padding: 9px 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .business-badge {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+}

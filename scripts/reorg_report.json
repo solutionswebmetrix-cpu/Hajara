@@ -1,0 +1,540 @@
+{
+  "moved": [
+    {
+      "from": "Ayurvedic brain tonic 1.png",
+      "to": "Single Herb Powders\\Ayurvedic brain tonic 1.png",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "ayurvedic_brain_tonic.png",
+      "to": "Single Herb Powders\\ayurvedic_brain_tonic.png",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "capsule\\Kamaxi capsule.png",
+      "to": "Capsule\\Kamaxi capsule.png",
+      "category": "Capsule"
+    },
+    {
+      "from": "capsule\\kamaxi_capsule.png",
+      "to": "Capsule\\kamaxi_capsule.png",
+      "category": "Capsule"
+    },
+    {
+      "from": "Guggul\\Abha Guggul.jpeg",
+      "to": "Guggul Formulations\\Abha Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Agastya Guggul.jpeg",
+      "to": "Guggul Formulations\\Agastya Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Amritadi Guggul.jpeg",
+      "to": "Guggul Formulations\\Amritadi Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Ashwagandhadi Guggul.jpeg",
+      "to": "Guggul Formulations\\Ashwagandhadi Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Brahad Singhnad Guggul.jpeg",
+      "to": "Guggul Formulations\\Brahad Singhnad Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Gokshuradi Guggul.jpeg",
+      "to": "Guggul Formulations\\Gokshuradi Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Haritkyadi Guggul.jpeg",
+      "to": "Guggul Formulations\\Haritkyadi Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Kachnar Guggul.jpeg",
+      "to": "Guggul Formulations\\Kachnar Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Kaishor Guggul.jpeg",
+      "to": "Guggul Formulations\\Kaishor Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Lakshadi Guggul.jpeg",
+      "to": "Guggul Formulations\\Lakshadi Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Mahayograj Guggul.jpeg",
+      "to": "Guggul Formulations\\Mahayograj Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Medohar Guggul.jpeg",
+      "to": "Guggul Formulations\\Medohar Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Panchamritloh Guggul.jpeg",
+      "to": "Guggul Formulations\\Panchamritloh Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Panchtikt Guggul.jpeg",
+      "to": "Guggul Formulations\\Panchtikt Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Punarnavadi Guggul.jpeg",
+      "to": "Guggul Formulations\\Punarnavadi Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Rasnadi Guggul.jpeg",
+      "to": "Guggul Formulations\\Rasnadi Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Singhnad Guggul.jpeg",
+      "to": "Guggul Formulations\\Singhnad Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Trayodashang Guggul.jpeg",
+      "to": "Guggul Formulations\\Trayodashang Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Triphala Guggul.jpeg",
+      "to": "Guggul Formulations\\Triphala Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Guggul\\Yogaraj Guggul.jpeg",
+      "to": "Guggul Formulations\\Yogaraj Guggul.jpeg",
+      "category": "Guggul Formulations"
+    },
+    {
+      "from": "Herbal face wash with turmeric and aloe.png",
+      "to": "Sharbat\\Herbal face wash with turmeric and aloe.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "oil\\grower_hair_oil.png",
+      "to": "Medicated Taila\\grower_hair_oil.png",
+      "category": "Medicated Taila"
+    },
+    {
+      "from": "oil\\hajara_herbal_hair.png",
+      "to": "Medicated Taila\\hajara_herbal_hair.png",
+      "category": "Medicated Taila"
+    },
+    {
+      "from": "oil\\mr_ortho_pain_oil.png",
+      "to": "Medicated Taila\\mr_ortho_pain_oil.png",
+      "category": "Medicated Taila"
+    },
+    {
+      "from": "powder\\agnimukh_powder.jpg",
+      "to": "Single Herb Powders\\agnimukh_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\ajmodadi_powder.jpg",
+      "to": "Single Herb Powders\\ajmodadi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\aladi_powder.jpg",
+      "to": "Single Herb Powders\\aladi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\alsi_flex_seed_powder.jpg",
+      "to": "Single Herb Powders\\alsi_flex_seed_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\amla_powder.jpg",
+      "to": "Single Herb Powders\\amla_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\amrit_powder.jpg",
+      "to": "Single Herb Powders\\amrit_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\arjuna_powder.jpg",
+      "to": "Single Herb Powders\\arjuna_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\ashwagandha_powder.jpg",
+      "to": "Single Herb Powders\\ashwagandha_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\avipattikar_powder.jpg",
+      "to": "Single Herb Powders\\avipattikar_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\baheda_powder.jpg",
+      "to": "Single Herb Powders\\baheda_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\bakuchi_powder.jpg",
+      "to": "Single Herb Powders\\bakuchi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\balchaturbhadra_powder.jpg",
+      "to": "Single Herb Powders\\balchaturbhadra_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\balmitra_powder.jpg",
+      "to": "Single Herb Powders\\balmitra_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\bhasmak_nashak_powder.jpg",
+      "to": "Single Herb Powders\\bhasmak_nashak_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\brahat_sitopaladi_powder.jpg",
+      "to": "Single Herb Powders\\brahat_sitopaladi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\brahmi_powder.jpg",
+      "to": "Single Herb Powders\\brahmi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\chandan_powder.jpg",
+      "to": "Single Herb Powders\\chandan_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\chirayata_powder.jpg",
+      "to": "Single Herb Powders\\chirayata_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\chitrakadi_powder.jpg",
+      "to": "Single Herb Powders\\chitrakadi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\chopchiniyadi_powder.jpg",
+      "to": "Single Herb Powders\\chopchiniyadi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\dandimastak_powder.jpg",
+      "to": "Single Herb Powders\\dandimastak_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\dantmanjan_lal.jpg",
+      "to": "Single Herb Powders\\dantmanjan_lal.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\dantrashak_manjan.jpg",
+      "to": "Single Herb Powders\\dantrashak_manjan.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\dantshoolhar_manjan.jpg",
+      "to": "Single Herb Powders\\dantshoolhar_manjan.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\dhatuposhtik_powder.jpg",
+      "to": "Single Herb Powders\\dhatuposhtik_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\garbhakar_powder.jpg",
+      "to": "Single Herb Powders\\garbhakar_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\giloy_powder.jpg",
+      "to": "Single Herb Powders\\giloy_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\giloy_satva_powder.jpg",
+      "to": "Single Herb Powders\\giloy_satva_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\gokshuradi_powder.jpg",
+      "to": "Single Herb Powders\\gokshuradi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\harad_powder.jpg",
+      "to": "Single Herb Powders\\harad_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\Himalayan Shilajit.png",
+      "to": "Single Herb Powders\\Himalayan Shilajit.png",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\indigo_powder.jpg",
+      "to": "Single Herb Powders\\indigo_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\jamun_seed_powder.jpg",
+      "to": "Single Herb Powders\\jamun_seed_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\jatifaladi_powder.jpg",
+      "to": "Single Herb Powders\\jatifaladi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\kabjvida_powder.png",
+      "to": "Single Herb Powders\\kabjvida_powder.png",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\kachnar_powder.jpg",
+      "to": "Single Herb Powders\\kachnar_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\madhumeh_daman_powder.jpg",
+      "to": "Single Herb Powders\\madhumeh_daman_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\mahasudarshan_powder.jpg",
+      "to": "Single Herb Powders\\mahasudarshan_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\mastishkabal_powder.jpg",
+      "to": "Single Herb Powders\\mastishkabal_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\methi_powder.jpg",
+      "to": "Single Herb Powders\\methi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\musali_powder.jpg",
+      "to": "Single Herb Powders\\musali_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\mutravirechan_powder.jpg",
+      "to": "Single Herb Powders\\mutravirechan_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\namak_sulemani_powder.jpg",
+      "to": "Single Herb Powders\\namak_sulemani_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\narayan_powder.jpg",
+      "to": "Single Herb Powders\\narayan_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\neem_powder.jpg",
+      "to": "Single Herb Powders\\neem_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\pamari_pralep_powder.jpg",
+      "to": "Single Herb Powders\\pamari_pralep_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\panchsam_powder.jpg",
+      "to": "Single Herb Powders\\panchsam_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\pradarnashak_powder.jpg",
+      "to": "Single Herb Powders\\pradarnashak_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\pramehentak_powder.jpg",
+      "to": "Single Herb Powders\\pramehentak_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\punarnava_powder.jpg",
+      "to": "Single Herb Powders\\punarnava_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\pusyanug_powder.jpg",
+      "to": "Single Herb Powders\\pusyanug_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\raj_pravartak_powder.jpg",
+      "to": "Single Herb Powders\\raj_pravartak_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\reetha_powder.jpg",
+      "to": "Single Herb Powders\\reetha_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\sanay_powder.jpg",
+      "to": "Single Herb Powders\\sanay_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\satavar_powder.jpg",
+      "to": "Single Herb Powders\\satavar_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\shikakai_powder.jpg",
+      "to": "Single Herb Powders\\shikakai_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\talisadi_powder.jpg",
+      "to": "Single Herb Powders\\talisadi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\triphala_powder.jpg",
+      "to": "Single Herb Powders\\triphala_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\tulsi_powder.jpg",
+      "to": "Single Herb Powders\\tulsi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\vajrachar_powder.jpg",
+      "to": "Single Herb Powders\\vajrachar_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\vajrakshar_powder.jpg",
+      "to": "Single Herb Powders\\vajrakshar_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\vasadi_powder.jpg",
+      "to": "Single Herb Powders\\vasadi_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "powder\\virya_shodhan_powder.jpg",
+      "to": "Single Herb Powders\\virya_shodhan_powder.jpg",
+      "category": "Single Herb Powders"
+    },
+    {
+      "from": "syrup\\careliv_liver_disorder_syrup.png",
+      "to": "Sharbat\\careliv_liver_disorder_syrup.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\Charmolin herbal restorative 2.png",
+      "to": "Sharbat\\Charmolin herbal restorative 2.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\charmolin_herbal_restorative_1.png",
+      "to": "Sharbat\\charmolin_herbal_restorative_1.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\gacid_syrup.png",
+      "to": "Sharbat\\gacid_syrup.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\hajara_appezyme_digestive_syrup.png",
+      "to": "Sharbat\\hajara_appezyme_digestive_syrup.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\irovitz_syrup.png",
+      "to": "Sharbat\\irovitz_syrup.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\irovitz_syrup_1.png",
+      "to": "Sharbat\\irovitz_syrup_1.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\puspanjali_syrup.png",
+      "to": "Sharbat\\puspanjali_syrup.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\puspanjali_syrup_1.png",
+      "to": "Sharbat\\puspanjali_syrup_1.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\puspanjali_syrup_2.png",
+      "to": "Sharbat\\puspanjali_syrup_2.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "syrup\\puspanjali_syrup_3.png",
+      "to": "Sharbat\\puspanjali_syrup_3.png",
+      "category": "Sharbat"
+    },
+    {
+      "from": "Toothpaste Powders\\Vajrika Ayurvedic toothpaste.png",
+      "to": "Ayurvedic Tooth Powders\\Vajrika Ayurvedic toothpaste.png",
+      "category": "Ayurvedic Tooth Powders"
+    },
+    {
+      "from": "Toothpaste Powders\\vajrika_ayurvedic_toothpaste.png",
+      "to": "Ayurvedic Tooth Powders\\vajrika_ayurvedic_toothpaste.png",
+      "category": "Ayurvedic Tooth Powders"
+    }
+  ],
+  "orphans": [],
+  "categoryCounts": {
+    "Single Herb Powders": 87,
+    "Medicated Taila": 18,
+    "Capsule": 1,
+    "Sharbat": 28,
+    "Ayurvedic Tooth Powders": 6,
+    "Guggul Formulations": 21,
+    "Advanced Brain Tonics & Mineral Rasayanas": 7,
+    "Churna": 60,
+    "Topical Application Powders": 3,
+    "Vati & Gutika": 61,
+    "Loh & Mandur": 20,
+    "Pak, Avaleha & Murabba": 22
+  },
+  "totalProducts": 334
+}

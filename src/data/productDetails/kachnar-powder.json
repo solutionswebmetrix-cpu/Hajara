@@ -1,0 +1,31 @@
+{
+  "title": "Kachnar Powder",
+  "description": "Kachnar Powder for traditional wellness support.",
+  "seoTitle": "Kachnar Powder - Hajara Multicare",
+  "seoDescription": "Kachnar Powder for traditional wellness support.",
+  "benefits": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "uses": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "dosage": [
+    "Take as directed by Ayurvedic physician",
+    "Follow recommended dosage"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/nxb1cweo/image/upload/f_auto,q_auto,w_1000/product/powder/kachnar_powder.webp"
+  ],
+  "meta": {
+    "keywords": [
+      "Kachnar Powder",
+      "Single Herb Powders",
+      "Ayurvedic"
+    ]
+  },
+  "extra": {}
+}

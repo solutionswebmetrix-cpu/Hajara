@@ -1,0 +1,31 @@
+{
+  "title": "Arjuna",
+  "description": "Ayurvedic Arjuna for traditional wellness support.",
+  "seoTitle": "Arjuna - Hajara Multicare",
+  "seoDescription": "Ayurvedic Arjuna for traditional wellness support.",
+  "benefits": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "uses": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "dosage": [
+    "Take as directed by Ayurvedic physician",
+    "Follow recommended dosage"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/nxb1cweo/image/upload/f_auto,q_auto,w_1000/products/Single Herb Powders/arjuna_powder.jpg"
+  ],
+  "meta": {
+    "keywords": [
+      "Arjuna",
+      "Single Herb Powders",
+      "Ayurvedic"
+    ]
+  },
+  "extra": {}
+}

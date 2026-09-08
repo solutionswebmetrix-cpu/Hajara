@@ -1,0 +1,133 @@
+.our-strengths {
+  width: 100%;
+  background: var(--white);
+}
+
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.strength-card {
+  background: var(--cream);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.strength-card:hover {
+  box-shadow: var(--shadow-xl);
+}
+
+.strength-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.strength-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.strength-desc {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+@media (max-width: 1920px) {
+  .strengths-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1440px) {
+  .strengths-grid {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .strengths-grid {
+    gap: 20px;
+  }
+  .strength-card {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .strength-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strength-card {
+    padding: 30px;
+  }
+  .strength-title {
+    font-size: 19px;
+  }
+  .strength-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .strength-card {
+    padding: 25px;
+  }
+  .strength-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .strength-card {
+    padding: 22px;
+  }
+  .strength-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .strength-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 320px) {
+  .strength-card {
+    padding: 20px;
+  }
+}

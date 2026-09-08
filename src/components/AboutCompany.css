@@ -1,0 +1,360 @@
+.about-company {
+  width: 100%;
+  background: var(--white);
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.about-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.about-left {
+  width: 100%;
+}
+
+.about-main-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+}
+
+.about-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.achievement-card {
+  padding: 28px;
+  background: linear-gradient(135deg, #F8F9FA 0%, var(--cream) 100%);
+  border: 1px solid rgba(14, 107, 69, 0.1);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.achievement-card:hover {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+  border-color: transparent;
+}
+
+.achievement-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.achievement-card:hover .achievement-icon {
+  background: var(--secondary);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.achievement-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.achievement-card:hover h4 {
+  color: var(--white);
+}
+
+.achievement-card p {
+  font-size: 14px;
+  color: var(--text-light);
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.achievement-card:hover p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.facilities-section {
+  margin-bottom: 80px;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.facility-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.facility-img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: white;
+  padding: 20px;
+}
+
+.facility-content {
+  padding: 24px;
+}
+
+.facility-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.facility-content p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.timeline-section {
+  padding: 60px 0;
+}
+
+.timeline-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 48px;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.timeline-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 4px solid var(--primary);
+  margin: 0 auto 20px;
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-content {
+  background: var(--cream);
+  padding: 24px;
+  border-radius: var(--radius-lg);
+}
+
+.timeline-year {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.timeline-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+@media (max-width: 1920px) {
+  .about-main {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .about-container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-main {
+    gap: 50px;
+  }
+
+  .facilities-grid {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-main {
+    grid-template-columns: 1fr;
+  }
+
+  .about-main-img {
+    height: 400px;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-heading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-main-img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-container {
+    padding: 0 20px;
+  }
+
+  .about-main-img {
+    height: 300px;
+  }
+
+  .about-heading {
+    font-size: 28px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+  .timeline-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-heading {
+    font-size: 26px;
+  }
+  .about-main-img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 0 16px;
+  }
+  .about-main-img {
+    height: 250px;
+  }
+  .about-heading {
+    font-size: 24px;
+  }
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-main-img {
+    height: 230px;
+  }
+  .about-heading {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-container {
+    padding: 0 12px;
+  }
+  .about-main-img {
+    height: 200px;
+  }
+}

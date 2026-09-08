@@ -1,0 +1,31 @@
+{
+  "title": "Harad",
+  "description": "Ayurvedic Harad for traditional wellness support.",
+  "seoTitle": "Harad - Hajara Multicare",
+  "seoDescription": "Ayurvedic Harad for traditional wellness support.",
+  "benefits": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "uses": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "dosage": [
+    "Take as directed by Ayurvedic physician",
+    "Follow recommended dosage"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/nxb1cweo/image/upload/f_auto,q_auto,w_1000/products/Single Herb Powders/harad_powder.jpg"
+  ],
+  "meta": {
+    "keywords": [
+      "Harad",
+      "Single Herb Powders",
+      "Ayurvedic"
+    ]
+  },
+  "extra": {}
+}

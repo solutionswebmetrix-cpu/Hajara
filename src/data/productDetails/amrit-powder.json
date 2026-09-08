@@ -1,0 +1,31 @@
+{
+  "title": "Amrit Powder",
+  "description": "Amrit Powder for traditional wellness support.",
+  "seoTitle": "Amrit Powder - Hajara Multicare",
+  "seoDescription": "Amrit Powder for traditional wellness support.",
+  "benefits": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "uses": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "dosage": [
+    "Take as directed by Ayurvedic physician",
+    "Follow recommended dosage"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/nxb1cweo/image/upload/f_auto,q_auto,w_1000/product/powder/amrit_powder.webp"
+  ],
+  "meta": {
+    "keywords": [
+      "Amrit Powder",
+      "Single Herb Powders",
+      "Ayurvedic"
+    ]
+  },
+  "extra": {}
+}

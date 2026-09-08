@@ -1,0 +1,31 @@
+{
+  "title": "Panchsam Powder",
+  "description": "Panchsam Powder for traditional wellness support.",
+  "seoTitle": "Panchsam Powder - Hajara Multicare",
+  "seoDescription": "Panchsam Powder for traditional wellness support.",
+  "benefits": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "uses": [
+    "Supports overall health",
+    "Traditional formulation",
+    "Natural ingredients"
+  ],
+  "dosage": [
+    "Take as directed by Ayurvedic physician",
+    "Follow recommended dosage"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/nxb1cweo/image/upload/f_auto,q_auto,w_1000/product/powder/panchsam_powder.webp"
+  ],
+  "meta": {
+    "keywords": [
+      "Panchsam Powder",
+      "Single Herb Powders",
+      "Ayurvedic"
+    ]
+  },
+  "extra": {}
+}
