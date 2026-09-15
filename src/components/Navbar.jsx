@@ -50,7 +50,14 @@ const Navbar = () => {
 
   const getCategoriesColumns = () => {
     const columns = [[], [], [], []];
-    categories.forEach((cat, idx) => {
+    // Sort categories alphabetically A-Z (case-insensitive) before distributing
+    const sortedCats = [...categories].sort((a, b) =>
+      a.localeCompare(b, undefined, {
+        sensitivity: "base",
+        numeric: true
+      })
+    );
+    sortedCats.forEach((cat, idx) => {
       columns[idx % 4].push({ name: cat, slug: slugifyCategory(cat) });
     });
     return columns;

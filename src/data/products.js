@@ -214,3 +214,25 @@ export const isComingSoonProduct = (product) => {
   if (!product) return false;
   return product.category === COMING_SOON_CATEGORY;
 };
+
+export const resolveProductImage = (product) => {
+  if (!product) return null;
+  const raw =
+    product.image ||
+    product.imageUrl ||
+    product.thumbnail ||
+    (Array.isArray(product.images) && product.images[0]) ||
+    null;
+  if (!raw || typeof raw !== "string") return null;
+  const trimmed = raw.trim();
+  if (!trimmed) return null;
+  if (
+    trimmed.startsWith("http://") ||
+    trimmed.startsWith("https://") ||
+    trimmed.startsWith("data:") ||
+    trimmed.startsWith("/")
+  ) {
+    return trimmed;
+  }
+  return `/${trimmed.replace(/^\/+/, "")}`;
+};

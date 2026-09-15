@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiHeart, FiStar, FiGlobe, FiArrowRight } from 'react-icons/fi';
-import { products, isComingSoonProduct } from '../data/products';
+import { products, isComingSoonProduct, COMING_SOON_CATEGORY, resolveProductImage } from '../data/products';
 import './FeaturedProducts.css';
 
 const hotProductOrder = [
@@ -30,6 +30,14 @@ const FeaturedProducts = () => {
     .map(id => products.find(p => p.id === id))
     .filter(Boolean);
 
+  // Sort Hot Products alphabetically A-Z (case-insensitive) - same products, only order changes
+  const sortedFeaturedProducts = [...featuredProducts].sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, {
+      sensitivity: "base",
+      numeric: true
+    })
+  );
+
   return (
     <section className="section featured-products">
       <div className="container">
@@ -42,7 +50,7 @@ const FeaturedProducts = () => {
         </div>
         
         <div className="products-grid">
-          {featuredProducts.map((product, index) => (
+          {sortedFeaturedProducts.map((product, index) => (
             <motion.div
               key={product.id}
               className="product-card"
@@ -54,10 +62,10 @@ const FeaturedProducts = () => {
             >
               <div className="product-image-wrapper">
                 <div className="product-badge">Best Seller</div>
-                {product.image && !isComingSoonProduct(product) && (
+                {product.image && !isComingSoonProduct(product) && product.category !== COMING_SOON_CATEGORY && (
                   <img src={product.image} alt={product.name} className="product-image" />
                 )}
-                {isComingSoonProduct(product) && (
+                {isComingSoonProduct(product) && product.category !== COMING_SOON_CATEGORY && (
                   <div className="coming-soon-overlay">
                     <span className="coming-soon-badge">New</span>
                     <h3 className="coming-soon-title">Coming Soon</h3>

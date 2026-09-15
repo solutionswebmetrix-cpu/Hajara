@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { products, categories, slugifyCategory, deslugifyCategory, isComingSoonProduct } from '../data/products';
+import { products, categories, slugifyCategory, deslugifyCategory, isComingSoonProduct, COMING_SOON_CATEGORY, resolveProductImage } from '../data/products';
 import './Products.css';
 
 const Products = () => {
@@ -29,6 +29,14 @@ const Products = () => {
     );
   }
 
+  // Sort products alphabetically A-Z (case-insensitive)
+  const sortedProducts = [...filteredProducts].sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, {
+      sensitivity: "base",
+      numeric: true
+    })
+  );
+
   // Reset to page 1 when filters change
   useEffect(() => {
     setCurrentPage(1);
@@ -43,10 +51,10 @@ const Products = () => {
   };
 
   // Pagination logic
-  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+  const totalPages = Math.ceil(sortedProducts.length / productsPerPage);
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = sortedProducts.slice(indexOfFirstProduct, indexOfLastProduct);
 
   // Scroll to top of products section when page changes
   useEffect(() => {
@@ -74,6 +82,14 @@ const Products = () => {
   };
 
   const pageNumbers = getPageNumbers();
+
+  // Sort categories alphabetically A-Z (case-insensitive)
+  const sortedCategories = [...categories].sort((a, b) =>
+    a.localeCompare(b, undefined, {
+      sensitivity: "base",
+      numeric: true
+    })
+  );
 
   const pageTitle = selectedCategory ? `${selectedCategory}` : 'Our Products';
 
@@ -115,7 +131,7 @@ const Products = () => {
             >
               All Products
             </motion.button>
-            {categories.map((category, index) => (
+            {sortedCategories.map((category, index) => (
               <motion.button
                 key={category}
                 className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
@@ -133,7 +149,7 @@ const Products = () => {
 
       <section ref={productsSectionRef} className="section products-display-section">
         <div className="container">
-          {filteredProducts.length === 0 ? (
+          {sortedProducts.length === 0 ? (
             <div className="no-products">
               {selectedCategory && !searchQuery ? (
                 <>
@@ -170,22 +186,34 @@ const Products = () => {
                     whileHover={{ y: -10 }}
                   >
                     <div className="product-image-wrapper-page">
-                      {product.image && !isComingSoonProduct(product) && (
-                        <img 
-                          src={product.image} 
-                          alt={product.name} 
-                          className="product-image-page" 
-                          loading="lazy" 
-                          decoding="async"
-                        />
-                      )}
-                      {isComingSoonProduct(product) && (
-                        <div className="coming-soon-overlay">
-                          <span className="coming-soon-badge">New</span>
-                          <h3 className="coming-soon-title">Coming Soon</h3>
-                          <p className="coming-soon-subtitle">Launching Shortly</p>
-                        </div>
-                      )}
+                      {(() => {
+                        const imageSrc = resolveProductImage(product);
+                        const isPakCategory = product.category === COMING_SOON_CATEGORY;
+                        if (imageSrc && (!isComingSoonProduct(product) || isPakCategory)) {
+                          return (
+                            <img
+                              src={imageSrc}
+                              alt={product.name}
+                              className="product-image-page"
+                              loading="lazy"
+                              decoding="async"
+                              onError={(e) => {
+                                e.currentTarget.style.display = 'none';
+                              }}
+                            />
+                          );
+                        }
+                        if (isComingSoonProduct(product) && !isPakCategory) {
+                          return (
+                            <div className="coming-soon-overlay">
+                              <span className="coming-soon-badge">New</span>
+                              <h3 className="coming-soon-title">Coming Soon</h3>
+                              <p className="coming-soon-subtitle">Launching Shortly</p>
+                            </div>
+                          );
+                        }
+                        return null;
+                      })()}
                     </div>
                     <div className="product-info-page">
                       <span className="product-category-tag-page">{product.category}</span>

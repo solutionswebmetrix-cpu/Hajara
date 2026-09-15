@@ -36,6 +36,14 @@ const categories = [
 ];
 
 const Categories = () => {
+  // Sort categories alphabetically A-Z (case-insensitive) - same categories, only order changes
+  const sortedCategories = [...categories].sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, {
+      sensitivity: "base",
+      numeric: true
+    })
+  );
+
   return (
     <section className="section categories">
       <div className="container">
@@ -48,7 +56,7 @@ const Categories = () => {
         </div>
 
         <div className="categories-grid">
-          {categories.map((category, index) => (
+          {sortedCategories.map((category, index) => (
             <motion.div
               key={index}
               className="category-card"

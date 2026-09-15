@@ -3,7 +3,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiMail, FiPhone } from 'react-icons/fi';
-import { getProductById, getRelatedProducts, isComingSoonProduct } from '../data/products';
+import { getProductById, getRelatedProducts, isComingSoonProduct, COMING_SOON_CATEGORY } from '../data/products';
 import './ProductDetail.css';
 
 const normalizeList = (value, defaults) => {
@@ -123,7 +123,9 @@ const ProductDetail = () => {
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
               >
-                {isComingSoonProduct(fullProduct) ? (
+                {fullProduct.category === COMING_SOON_CATEGORY ? (
+                  null
+                ) : isComingSoonProduct(fullProduct) ? (
                   <div className="coming-soon-overlay">
                     <span className="coming-soon-badge">New</span>
                     <h3 className="coming-soon-title">Coming Soon</h3>
@@ -136,7 +138,7 @@ const ProductDetail = () => {
                   />
                 ) : null}
               </div>
-              {hasMultipleImages && !isComingSoonProduct(fullProduct) && (
+              {hasMultipleImages && !isComingSoonProduct(fullProduct) && fullProduct.category !== COMING_SOON_CATEGORY && (
                 <div className="product-thumbnails">
                   {galleryImages.map((img, index) => (
                     <motion.button
@@ -231,10 +233,10 @@ const ProductDetail = () => {
                 >
                   <Link to={`/product/${relatedProduct.id}`} className="related-product-link">
                     <div className="related-product-image">
-                      {relatedProduct.image && !isComingSoonProduct(relatedProduct) && (
+                      {relatedProduct.image && !isComingSoonProduct(relatedProduct) && relatedProduct.category !== COMING_SOON_CATEGORY && (
                         <img src={relatedProduct.image} alt={relatedProduct.name} />
                       )}
-                      {isComingSoonProduct(relatedProduct) && (
+                      {isComingSoonProduct(relatedProduct) && relatedProduct.category !== COMING_SOON_CATEGORY && (
                         <div className="coming-soon-overlay">
                           <span className="coming-soon-badge">New</span>
                           <h3 className="coming-soon-title">Coming Soon</h3>
