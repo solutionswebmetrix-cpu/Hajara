@@ -385,3 +385,47 @@
     height: 270px;
   }
 }
+
+@media (min-width: 1025px) {
+  .hero {
+    min-height: 88vh;
+    padding-top: 96px;
+  }
+
+  .hero-content {
+    min-height: calc(88vh - 96px);
+  }
+
+  .hero-badge {
+    margin-bottom: 16px;
+  }
+
+  .hero-title {
+    font-size: 52px;
+    margin-bottom: 18px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+
+  .hero-buttons {
+    margin-bottom: 36px;
+  }
+
+  .hero-visual {
+    height: 520px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .hero-title {
+    font-size: 46px;
+  }
+
+  .hero-visual {
+    height: 480px;
+  }
+}
