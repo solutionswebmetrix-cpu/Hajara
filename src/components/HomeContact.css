@@ -1,12 +1,12 @@
 .home-contact {
   width: 100%;
   background: var(--cream);
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 38px;
 }
 
 .contact-grid {
@@ -146,8 +146,8 @@
 
 @media (max-width: 768px) {
   .home-contact {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   .contact-cards-grid {

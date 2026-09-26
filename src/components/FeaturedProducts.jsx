@@ -61,9 +61,8 @@ const FeaturedProducts = () => {
               whileHover={{ y: -10 }}
             >
               <div className="product-image-wrapper">
-                <div className="product-badge">Best Seller</div>
                 {product.image && !isComingSoonProduct(product) && product.category !== COMING_SOON_CATEGORY && (
-                  <img src={product.image} alt={product.name} className="product-image" />
+                  <img src={resolveProductImage(product)} alt={product.name} className="product-image" loading="lazy" decoding="async" />
                 )}
                 {isComingSoonProduct(product) && product.category !== COMING_SOON_CATEGORY && (
                   <div className="coming-soon-overlay">

@@ -15,7 +15,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 48px;
 }
 
 .about-left {
@@ -114,7 +114,7 @@
 }
 
 .facilities-section {
-  margin-bottom: 80px;
+  margin-bottom: 48px;
 }
 
 .facilities-grid {
@@ -161,7 +161,7 @@
 }
 
 .timeline-section {
-  padding: 60px 0;
+  padding: 44px 0;
 }
 
 .timeline-heading {
@@ -169,7 +169,7 @@
   font-size: 32px;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .timeline {

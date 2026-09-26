@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -101,7 +102,7 @@ body {
 /* Section Header */
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 38px;
 }
 
 .section-subhead {
@@ -143,7 +144,7 @@ body {
 
 @media (max-width: 1024px) {
   .section {
-    padding: 100px 0;
+    padding: 64px 0;
   }
   
   .section-title {
@@ -153,7 +154,7 @@ body {
 
 @media (max-width: 991px) {
   .section {
-    padding: 80px 0;
+    padding: 56px 0;
   }
   
   .section-title {
@@ -171,7 +172,7 @@ body {
   }
   
   .section {
-    padding: 70px 0;
+    padding: 52px 0;
   }
   
   .section-title {
@@ -190,7 +191,7 @@ body {
 
 @media (max-width: 576px) {
   .section {
-    padding: 60px 0;
+    padding: 48px 0;
   }
   
   .section-title {
@@ -213,7 +214,7 @@ body {
   }
   
   .section {
-    padding: 50px 0;
+    padding: 44px 0;
   }
   
   .section-title {

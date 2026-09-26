@@ -1,143 +1,84 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { FiArrowRight, FiGlobe, FiAward, FiStar, FiCheckCircle } from 'react-icons/fi';
+import { FiArrowRight } from 'react-icons/fi';
+import { Autoplay, EffectFade } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 import './Hero.css';
-import manufacturingFacilityImg from '../assets/about-us/Manufacturing.jpg';
-import herbalIngredientsImg from '../assets/about-us/herbal-ingredients.png';
-import heroMainImg from '../assets/hero.png';
-import heroBgImg from '../assets/about-us/about-us-banner.png';
+import bannerOne from '../assets/banner/banner 1.png';
+import bannerTwo from '../assets/banner/banner 2.png';
+import bannerThree from '../assets/banner/banner 3.png';
+import bannerFour from '../assets/banner/banner.png';
 
 const Hero = () => {
-  const handleImageError = (e, fallbackSrc) => {
-    e.target.src = fallbackSrc;
-  };
+  const slides = [
+    {
+      image: bannerOne,
+      alt: 'Ayurvedic wellness products from Hajara Multicare',
+      eyebrow: 'Quality you can trust',
+      title: 'Made with care. Ready for the world.',
+      description: 'Our quality-led manufacturing and export experience brings dependable Ayurvedic products to partners worldwide.'
+    },
+    {
+      image: bannerTwo,
+      alt: 'Hajara Multicare Ayurvedic product range',
+      eyebrow: 'A range for modern wellness',
+      title: 'Tradition behind every formulation',
+      description: 'Explore a wide portfolio shaped by Ayurvedic knowledge and produced for the needs of today.'
+    },
+    {
+      image: bannerThree,
+      alt: 'Hajara Multicare Ayurvedic wellness formulations',
+      eyebrow: 'Ayurvedic wellness',
+      title: 'Nature-inspired formulations',
+      description: 'Thoughtfully developed products combining traditional knowledge with modern manufacturing standards.'
+    },
+    {
+      image: bannerFour,
+      alt: 'Hajara Multicare export-ready Ayurvedic products',
+      eyebrow: 'Global quality',
+      title: 'Ayurvedic products for a global market',
+      description: 'Reliable formulations, premium packaging and export-ready products for international partners.'
+    }
+  ];
 
   return (
-    <section className="hero">
-      <div className="hero-background">
-        <div className="hero-banner-container">
-          <img 
-            src={heroBgImg} 
-            alt="Hero Background"
-            className="hero-banner-image"
-            onError={(e) => handleImageError(e, 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=700&fit=crop')}
-          />
-        </div>
-      </div>
-      <div className="hero-container">
-        <div className="hero-content">
-          <motion.div
-            className="hero-left"
-            initial={{ opacity: 0, x: -60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-          >
-            <div className="hero-badge">
-              <FiGlobe />
-              <span>Premium Ayurvedic Manufacturer & Exporter</span>
-            </div>
+    <section className="hero" aria-label="Hajara Multicare highlights">
+      <Swiper
+        className="hero-viewport"
+        modules={[Autoplay, EffectFade]}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        slidesPerView={1}
+        spaceBetween={0}
+        loop
+        speed={800}
+        autoplay={{ delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true }}
+      >
+        {slides.map((slide, index) => {
+          const Title = index === 0 ? 'h1' : 'h2';
 
-            <h1 className="hero-title">
-              Crafting <span className="highlight">Ayurvedic Excellence</span> for Global Wellness
-            </h1>
-
-            <p className="hero-description">
-              Since 2005, HAJARA MULTICARE has been a trusted name in Ayurvedic healthcare, delivering premium quality products to 20+ countries. Experience the perfect blend of ancient wisdom and modern manufacturing.
-            </p>
-
-            <div className="hero-buttons">
-              <Link to="/products" className="btn btn-primary">
-                Explore Products
-                <FiArrowRight />
-              </Link>
-              <Link to="/contact" className="btn btn-gold">
-                Get Quote
-              </Link>
-            </div>
-
-            <div className="hero-trust">
-            <div className="trust-item">
-              <FiCheckCircle />
-              <span>Well Certified</span>
-            </div>
-            <div className="trust-item">
-              <FiCheckCircle />
-              <span>ISO Certified</span>
-            </div>
-            <div className="trust-item">
-              <FiCheckCircle />
-              <span>25+ Years Experience</span>
-            </div>
-          </div>
-          </motion.div>
-
-          <motion.div
-            className="hero-right"
-            initial={{ opacity: 0, x: 60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
-          >
-            <div className="hero-visual">
-              <div className="hero-images-grid">
-                {/* <div className="hero-image-main">
-                  <img 
-                    src={heroMainImg} 
-                    alt="Ayurvedic Products"
-                    className="product-img"
-                    onError={(e) => handleImageError(e, 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=700&fit=crop')}
-                  />
-                </div> */}
-                {/* <div className="hero-image-secondary hero-image-secondary-1">
-                  <img 
-                    src={manufacturingFacilityImg} 
-                    alt="Manufacturing Facility"
-                    className="product-img"
-                    onError={(e) => handleImageError(e, 'https://images.unsplash.com/photo-1598439216761-09625547348b?w=400&h=300&fit=crop')}
-                  />
-                </div> */}
-                <div className="hero-image-secondary hero-image-secondary-2">
-                  <img 
-                    src={herbalIngredientsImg} 
-                    alt="Herbal Ingredients"
-                    className="product-img"
-                    onError={(e) => handleImageError(e, 'https://images.unsplash.com/photo-1595425908973-9c982585c451?w=400&h=300&fit=crop')}
-                  />
+          return (
+            <SwiperSlide className="hero-slide" key={slide.image}>
+              <img className="hero-slide-image" src={slide.image} alt={slide.alt} />
+              <div className="hero-slide-copy">
+                <span className="hero-slide-eyebrow">{slide.eyebrow}</span>
+                <Title className="hero-title">{slide.title}</Title>
+                <p className="hero-description">{slide.description}</p>
+                <div className="hero-buttons">
+                  <Link to="/products" className="btn btn-primary">
+                    Explore Products
+                    <FiArrowRight aria-hidden="true" />
+                  </Link>
+                  <Link to="/contact" className="btn btn-gold">
+                    Get Quote
+                  </Link>
                 </div>
               </div>
-
-              {/* <motion.div
-                className="floating-badge badge-gmp"
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-              >
-                <FiAward />
-                <span>GMP Certified</span>
-              </motion.div>
-
-              <motion.div
-                className="floating-badge badge-export"
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-              >
-                <FiGlobe />
-                <span>20+ Countries</span>
-              </motion.div>
-
-              <motion.div
-                className="floating-badge badge-experience"
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.7 }}
-              >
-                <FiStar />
-                <span>15+ Years</span>
-              </motion.div> */}
-            </div>
-          </motion.div>
-        </div>
-      </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </section>
   );
 };

@@ -1,6 +1,6 @@
 .cta {
   position: relative;
-  padding: 6rem 0;
+  padding: 4.5rem 0;
   overflow: hidden;
 }
 
@@ -105,7 +105,7 @@
 
 @media (max-width: 1024px) {
   .cta {
-    padding: 4rem 0;
+    padding: 3.75rem 0;
   }
   
   .cta-title {
@@ -151,7 +151,7 @@
 
 @media (max-width: 480px) {
   .cta {
-    padding: 3.5rem 0;
+    padding: 3rem 0;
   }
   .cta-title {
     font-size: 1.6rem;
@@ -169,7 +169,7 @@
 
 @media (max-width: 320px) {
   .cta {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
   }
   .cta-title {
     font-size: 1.35rem;

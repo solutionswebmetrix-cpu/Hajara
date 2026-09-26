@@ -1,21 +1,26 @@
 import { motion } from 'framer-motion';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { products, categories, slugifyCategory, deslugifyCategory, isComingSoonProduct, COMING_SOON_CATEGORY, resolveProductImage } from '../data/products';
+import { products, deslugifyCategory, isComingSoonProduct, COMING_SOON_CATEGORY, resolveProductImage } from '../data/products';
 import './Products.css';
 
 const Products = () => {
   const { category: categorySlug } = useParams();
-  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState(() => deslugifyCategory(categorySlug));
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(() => searchParams.get('search') || '');
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 36;
   const productsSectionRef = useRef(null);
+  const previousPageRef = useRef(1);
 
   useEffect(() => {
     setSelectedCategory(deslugifyCategory(categorySlug));
   }, [categorySlug]);
+
+  useEffect(() => {
+    setSearchQuery(searchParams.get('search') || '');
+  }, [searchParams]);
 
   // Filter products
   let filteredProducts = products;
@@ -42,14 +47,6 @@ const Products = () => {
     setCurrentPage(1);
   }, [selectedCategory, searchQuery]);
 
-  const handleCategorySelect = (categoryName) => {
-    if (categoryName) {
-      navigate(`/products/${slugifyCategory(categoryName)}`, { replace: false });
-    } else {
-      navigate('/products', { replace: false });
-    }
-  };
-
   // Pagination logic
   const totalPages = Math.ceil(sortedProducts.length / productsPerPage);
   const indexOfLastProduct = currentPage * productsPerPage;
@@ -58,8 +55,9 @@ const Products = () => {
 
   // Scroll to top of products section when page changes
   useEffect(() => {
-    if (productsSectionRef.current) {
-      productsSectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (previousPageRef.current !== currentPage) {
+      previousPageRef.current = currentPage;
+      productsSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [currentPage]);
 
@@ -82,14 +80,6 @@ const Products = () => {
   };
 
   const pageNumbers = getPageNumbers();
-
-  // Sort categories alphabetically A-Z (case-insensitive)
-  const sortedCategories = [...categories].sort((a, b) =>
-    a.localeCompare(b, undefined, {
-      sensitivity: "base",
-      numeric: true
-    })
-  );
 
   const pageTitle = selectedCategory ? `${selectedCategory}` : 'Our Products';
 
@@ -114,35 +104,6 @@ const Products = () => {
                 setSearchQuery(e.target.value);
               }}
             />
-          </div>
-        </div>
-      </section>
-
-      {/* Category Filter */}
-      <section className="section categories-filter-section">
-        <div className="container">
-          <div className="categories-filter">
-            <motion.button
-              key="all"
-              className={`category-btn ${!selectedCategory ? 'active' : ''}`}
-              onClick={() => handleCategorySelect(null)}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              All Products
-            </motion.button>
-            {sortedCategories.map((category, index) => (
-              <motion.button
-                key={category}
-                className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
-                onClick={() => handleCategorySelect(category)}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ delay: index * 0.02 }}
-              >
-                {category}
-              </motion.button>
-            ))}
           </div>
         </div>
       </section>

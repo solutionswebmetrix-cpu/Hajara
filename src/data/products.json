@@ -2824,6 +2824,42 @@
     "description": "Proprietary Medicine Helpful in relief from haemorrhoids (piles), burning, anal fissure & discomfort"
   },
   {
+  "id": 254,
+  "slug": "chyawanprash-avaleha",
+  "name": "Chyawanprash Avaleha",
+  "category": "Pak, Avaleha & Murabba",
+  "image": "",
+  "featured": false,
+  "shortDescription": "Chyawanprash Avaleha for traditional wellness support."
+},
+{
+  "id": 255,
+  "slug": "kaunchpak",
+  "name": "Kaunchpak",
+  "category": "Pak, Avaleha & Murabba",
+  "image": "https://res.cloudinary.com/nxb1cweo/image/upload/v1790164958/Kaunchpak_bhgqyq.png",
+  "featured": false,
+  "shortDescription": "Kaunchpak prepared according to traditional Ayurvedic formulations."
+},
+{
+  "id": 256,
+  "slug": "supari-pak",
+  "name": "Supari Pak",
+  "category": "Pak, Avaleha & Murabba",
+  "image": "https://res.cloudinary.com/nxb1cweo/image/upload/v1790164957/Supari_Pak_fu50bx.png",
+  "featured": false,
+  "shortDescription": "Supari Pak prepared using traditional Ayurvedic formulation methods."
+},
+{
+  "id": 257,
+  "slug": "triphala-prash",
+  "name": "Triphala Prash",
+  "category": "Pak, Avaleha & Murabba",
+  "image": "https://res.cloudinary.com/nxb1cweo/image/upload/v1790164957/Triphala_Prash_knbrvl.png",
+  "featured": false,
+  "shortDescription": "Triphala Prash prepared using traditional Ayurvedic ingredients."
+},
+  {
     "id": 346,
     "slug": "activa-syrup",
     "name": "Activa Syrup",
