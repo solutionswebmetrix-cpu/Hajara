@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import './Hero.css';
-import bannerOne from '../assets/banner/banner 1.png';
-import bannerTwo from '../assets/banner/banner 2.png';
-import bannerThree from '../assets/banner/banner 3.png';
+import bannerOne from '../assets/banner/banner 1.webp';
+import bannerTwo from '../assets/banner/banner 2.webp';
+import bannerThree from '../assets/banner/banner 3.webp';
 import bannerFour from '../assets/banner/banner.png';
 
 const Hero = () => {
@@ -60,19 +60,24 @@ const Hero = () => {
 
           return (
             <SwiperSlide className="hero-slide" key={slide.image}>
-              <img className="hero-slide-image" src={slide.image} alt={slide.alt} />
-              <div className="hero-slide-copy">
-                <span className="hero-slide-eyebrow">{slide.eyebrow}</span>
-                <Title className="hero-title">{slide.title}</Title>
-                <p className="hero-description">{slide.description}</p>
-                <div className="hero-buttons">
-                  <Link to="/products" className="btn btn-primary">
-                    Explore Products
-                    <FiArrowRight aria-hidden="true" />
-                  </Link>
-                  <Link to="/contact" className="btn btn-gold">
-                    Get Quote
-                  </Link>
+              <div className="hero-slide-inner">
+                <div className="hero-slide-copy">
+                  <span className="hero-slide-eyebrow">{slide.eyebrow}</span>
+                  <Title className="hero-title">{slide.title}</Title>
+                  <p className="hero-description">{slide.description}</p>
+                  <div className="hero-buttons">
+                    <Link to="/products" className="btn btn-primary">
+                      Explore Products
+                      <FiArrowRight aria-hidden="true" />
+                    </Link>
+                    <Link to="/contact" className="btn btn-gold">
+                      Get Quote
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="hero-slide-visual">
+                  <img className="hero-slide-image" src={slide.image} alt={slide.alt} />
                 </div>
               </div>
             </SwiperSlide>

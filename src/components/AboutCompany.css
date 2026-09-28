@@ -3,6 +3,10 @@
   background: var(--white);
 }
 
+.section.about-company {
+  padding-top: clamp(32px, 4vw, 56px);
+}
+
 .about-container {
   width: 100%;
   max-width: 1600px;
