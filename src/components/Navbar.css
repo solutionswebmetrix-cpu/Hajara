@@ -6,15 +6,13 @@
   z-index: 1000;
   transition: all 0.3s ease;
   padding: 12px 0;
-  background: linear-gradient(180deg, rgba(5, 42, 28, 0.78) 0%, rgba(5, 42, 28, 0.38) 72%, rgba(5, 42, 28, 0) 100%);
+  background: #052a1c;
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .navbar.scrolled {
-  background: rgba(5, 42, 28, 0.86);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #052a1c;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
   padding: 10px 0;
 }

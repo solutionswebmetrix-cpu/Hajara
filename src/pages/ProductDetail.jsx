@@ -135,6 +135,7 @@ const ProductDetail = () => {
                   <img 
                     src={galleryImages[selectedImageIndex]} 
                     alt={fullProduct.name}
+                    className={fullProduct.slug === 'kabjvida-powder' ? 'kabj-vida-product-image' : undefined}
                   />
                 ) : null}
               </div>

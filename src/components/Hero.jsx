@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import './Hero.css';
-import bannerOne from '../assets/banner/banner 1.webp';
-import bannerTwo from '../assets/banner/banner 2.webp';
-import bannerThree from '../assets/banner/banner 3.webp';
+import bannerOne from '../assets/banner/banner 1.png';
+import bannerTwo from '../assets/banner/banner 2.png';
+import bannerThree from '../assets/banner/banner 3.png';
 import bannerFour from '../assets/banner/banner.png';
 
 const Hero = () => {
@@ -47,6 +47,7 @@ const Hero = () => {
       <Swiper
         className="hero-viewport"
         modules={[Autoplay, EffectFade]}
+        initialSlide={1}
         effect="fade"
         fadeEffect={{ crossFade: true }}
         slidesPerView={1}
@@ -59,8 +60,12 @@ const Hero = () => {
           const Title = index === 0 ? 'h1' : 'h2';
 
           return (
-            <SwiperSlide className="hero-slide" key={slide.image}>
-              <div className="hero-slide-inner">
+            <SwiperSlide
+              className={`hero-slide hero-slide-${index + 1}${index === 1 ? ' hero-slide-2' : ''}`}
+              key={slide.image}
+              style={{ '--hero-banner-image': `url("${slide.image}")` }}
+            >
+              <div className={`hero-slide-inner${index === 1 ? ' hero-content' : ''}`}>
                 <div className="hero-slide-copy">
                   <span className="hero-slide-eyebrow">{slide.eyebrow}</span>
                   <Title className="hero-title">{slide.title}</Title>
@@ -74,10 +79,6 @@ const Hero = () => {
                       Get Quote
                     </Link>
                   </div>
-                </div>
-
-                <div className="hero-slide-visual">
-                  <img className="hero-slide-image" src={slide.image} alt={slide.alt} />
                 </div>
               </div>
             </SwiperSlide>

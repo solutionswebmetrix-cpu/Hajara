@@ -47,6 +47,11 @@
   display: block;
 }
 
+.product-main-image img.kabj-vida-product-image {
+  object-fit: contain;
+  object-position: center;
+}
+
 .product-thumbnails {
   display: flex;
   gap: 12px;
